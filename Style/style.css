@@ -66,14 +66,14 @@ body
 header
 {
     width: 100%;
-    height: auto;
+    height: fit-content;
     /* padding: 25px; */
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: var(--secondcolor);
     position: relative;
+    padding: 15px;
 }
 #burgerIcon
 {
@@ -130,19 +130,21 @@ li a:hover
 .logo_item
 {
    width: max-content;
+   height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    /* background-color:green; */
+    margin: 0;
 }
 .logo_item span
 {
-  width: fit-content;
+  /* width: fit-content; */
   font-size: 20px;
-  color: red;
+  color: yellow;
   font-weight: bold;
+  margin: 0;
 }
 .logo_item small
 {
@@ -216,7 +218,7 @@ nav.show li a:hover
     header
     {
       justify-content: space-between;
-      /* gap: 25px; */
+      gap: 25px;
     }
 }
 @media screen  and (max-width:500px){
@@ -319,11 +321,10 @@ nav.show li a:hover
   outline: none;
   border: none;
   background-color:var(--secondcolor);
-  padding: 20px 25px ;
-  border-radius: 5px;
+  padding: 15px 20px ;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
-  font-weight: bold;
   transition: color 0.5s ease-out;
 }
 .text_home button:hover
@@ -408,6 +409,11 @@ nav.show li a:hover
     {
       font-size: 18px;
     }
+    .text_content{
+      width: 95%;
+      font-size: 18px;
+      font-weight: normal;
+    }
 }
 
 @media screen  and (max-width:500px){
@@ -439,7 +445,7 @@ nav.show li a:hover
   }
   .about .about_content
   {
-    width: 90vw;
+    width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -495,11 +501,11 @@ nav.show li a:hover
   }
   .about .about_content .btnAbout>a
   {
-    padding: 18px 50px;
-    border-radius: 15px;
+    padding: 15px 30px;
+    border-radius: 8px;
     background-color: var(--fircolor);
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 15px;
   }
   .about .about_content .btnAbout>a:hover
@@ -545,7 +551,11 @@ nav.show li a:hover
     }
     .about_text>h3
     {
-      font-size: 12px;
+      font-size: 14px;
+    }
+    .about_text
+    {
+      width: 95%;
     }
   }
   /* Section service */
@@ -598,8 +608,8 @@ nav.show li a:hover
     background-color: var(--fircolor);
     color: white;
     font-size: 14px;
-    font-weight: 800;
-    border-radius: 15px;
+    /* font-weight: 800; */
+    border-radius: 8px;
     outline: none;
     border: none;
     width: fit-content;
@@ -823,8 +833,9 @@ justify-content: space-between;
 }
 
 .logo {
-width: 80px;
-margin-bottom: 30px;
+width: fit-content;
+margin: 0;
+/* margin-bottom: 30px; */
 }
 
 .col {
